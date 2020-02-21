@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.8.1 on win32)" generated="20200221 13:47:08.398" rpa="false">
+<suite id="s1" name="TestSitePractice" source="C:\Projects\SuiteSiteTestPractice\tests\TestSitePractice.robot">
+<test id="s1-t1" name="Case Test 01: Find existing product">
+<kw name="Abrir navegador" library="Resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200221 13:47:08.677" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200221 13:47:08.677" endtime="20200221 13:47:11.005"></status>
+</kw>
+<status status="PASS" starttime="20200221 13:47:08.676" endtime="20200221 13:47:11.005"></status>
+</kw>
+<kw name="Access the home page of the website" library="Resource">
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>http://automationpractice.com/</arg>
+</arguments>
+<msg timestamp="20200221 13:47:11.010" level="INFO">Opening url 'http://automationpractice.com/'</msg>
+<status status="PASS" starttime="20200221 13:47:11.010" endtime="20200221 13:47:14.450"></status>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<doc>Verifies that the current page title equals ``title``.</doc>
+<arguments>
+<arg>My Store</arg>
+</arguments>
+<msg timestamp="20200221 13:47:14.459" level="INFO">Page title is 'My Store'.</msg>
+<status status="PASS" starttime="20200221 13:47:14.451" endtime="20200221 13:47:14.459"></status>
+</kw>
+<status status="PASS" starttime="20200221 13:47:11.009" endtime="20200221 13:47:14.459"></status>
+</kw>
+<kw name="Type the product name &quot;Blouse&quot; in the search field" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=search_query_top</arg>
+<arg>${PRODUCT}</arg>
+</arguments>
+<msg timestamp="20200221 13:47:14.460" level="INFO">Typing text 'Blouse' into text field 'id=search_query_top'.</msg>
+<status status="PASS" starttime="20200221 13:47:14.460" endtime="20200221 13:47:14.646"></status>
+</kw>
+<status status="PASS" starttime="20200221 13:47:14.460" endtime="20200221 13:47:14.646"></status>
+</kw>
+<kw name="Click in the search button" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>name=submit_search</arg>
+</arguments>
+<msg timestamp="20200221 13:47:14.647" level="INFO">Clicking element 'name=submit_search'.</msg>
+<status status="PASS" starttime="20200221 13:47:14.647" endtime="20200221 13:47:15.730"></status>
+</kw>
+<status status="PASS" starttime="20200221 13:47:14.646" endtime="20200221 13:47:15.730"></status>
+</kw>
+<status status="PASS" starttime="20200221 13:47:08.675" endtime="20200221 13:47:15.731" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20200221 13:47:08.399" endtime="20200221 13:47:15.733"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="TestSitePractice">TestSitePractice</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200221 13:47:08.392" level="WARN">Collapsing consecutive whitespace during parsing is deprecated. Fix ' #Test Teardown' in file 'C:\Projects\SuiteSiteTestPractice\tests\TestSitePractice.robot' on line 4.</msg>
+</errors>
+</robot>
